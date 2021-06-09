@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Puzzle</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h4>Image Puzzle Project</h2>
+      <small>Use keyboard arrows to solve the puzzle</h4>
+      <p>Enter the number o shuffles</h4>
+    </header>
+    <!-- main content -->
+    <section>
+      <div class="toolbar">
+        <input
+          type="number"
+          id="shuffle-count"
+          placeholder="Enter The Number Of Shuffle ..."
+        />
+        <button id="mix">MIX</button>
+        <span class="title">Number of Moves you have made are:</span>
+        <span id="moves-count">0</span>
+      </div>
+      <div id="content" class="playing-field"></div>
+      <div class="record">
+        <h4>Best Record you have achieved is <span id="rec"><</span></h4>
+      </div>
+    </section>
+
+    <footer>
+      <a target="_blank" href="https://www.linkedin.com/in/zeinab-ghannam-aa500995/" >
+        <p>&copy; 2021| Zeinab Ghannam</p></a>
+    </footer>
+
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
