@@ -1,0 +1,90 @@
+/* ballone styles */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.tooltip-wrapper {
+  position: absolute;
+  overflow: visible;
+  /* width: 2em;
+  height: 2em; */
+  top: 40%;
+}
+/* .tooltip-wrapper:before {
+  content: "?";
+  text-align: center;
+  background: #f6b829;
+  padding: 0.5em;
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+} */
+
+.tooltip-wrapper .tooltip {
+  display: block;
+  position: absolute;
+  /* top: calc(0.5em - 50px); */
+  top: 50%;
+  width: 400px;
+  min-height: 100px;
+  background: #2996f6;
+  color: white;
+  border-radius: 0.5em;
+}
+.tooltip-wrapper.tooltip-right .tooltip {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  margin-left: 1em;
+}
+.tooltip-wrapper.tooltip-left .tooltip {
+  background-color: #2996f6;
+  left: 2.5em;
+  margin-right: 1em;
+}
+.tooltip-wrapper.hover .tooltip,
+.tooltip-wrapper:hover .tooltip {
+  display: block;
+}
+
+.tooltip-wrapper .tooltip:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.tooltip-wrapper.tooltip-right .tooltip:before {
+  left: -1em;
+  top: 50px;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  border-right: 1em solid #2996f6;
+}
+.tooltip-wrapper.tooltip-left .tooltip:before {
+  right: -1em;
+  top: 50px;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  border-left: 1em solid #2996f6;
+}
+
+.tooltip-wrapper .tooltip .tooltip-title {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid black; */
+}
+.tooltip-wrapper .tooltip .tooltip-title,
+.tooltip-wrapper .tooltip .tooltip-body {
+  padding: 0.6em 1em;
+}
+.tooltip-left {
+  left: 0%;
+}
+
+.tooltip-right {
+  right: 30%;
+}

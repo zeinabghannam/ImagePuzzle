@@ -160,8 +160,7 @@ class Game {
   highlightBlankField(bgColor) {
     let blackFieldIndicesToString = `${this.blankRow}${this.blankCol}`;
     //console.log(blackFieldIndicesToString);
-    document.getElementById(
-      blackFieldIndicesToString
-    ).style.backgroundColor = bgColor;
+    document.getElementById(blackFieldIndicesToString).style.backgroundColor =
+      bgColor;
   }
 } //end class
